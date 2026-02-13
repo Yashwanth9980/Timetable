@@ -1,0 +1,49 @@
+Based on the Antigravity Kit documentation, here is the complete list of 11 workflow commands you can use. I have categorized them to help you understand when to use each one.
+
+🧠 Phase 1: Planning & Strategy
+/brainstorm - "The Explorer"
+
+Use when: You have a vague idea (e.g., "I need a way to handle lab clashes") but don't know the best solution. It lists options before you code.
+
+/plan - "The Architect"
+
+Use when: You know what you want but need a to-do list. It breaks a feature down into step-by-step tasks for a developer.
+
+/status - "The Auditor"
+
+Use when: You want a health check on your project (like the report we just generated).
+
+🛠️ Phase 2: Building & Coding
+/create - "The Builder"
+
+Use when: You are starting a new file or feature from scratch (e.g., "Create the Subject class").
+
+/enhance - "The Improver"
+
+Use when: You have code that works but needs to be better (cleaner, faster, or more secure).
+
+/ui-ux-pro-max - "The Designer"
+
+Use when: You need CSS or HTML designs. It triggers a "Design Expert" to give you polished UI code.
+
+🐛 Phase 3: Quality Control
+/debug - "The Detective"
+
+Use when: Something is broken. It forces a systematic root-cause analysis instead of random guessing.
+
+/test - "The Quality Assurance"
+
+Use when: You want to write unit tests to ensure your code doesn't break in the future.
+
+🚀 Phase 4: Operations & Complex Tasks
+/preview - "The Simulator"
+
+Use when: You want to check if the app runs locally (mostly useful for web apps).
+
+/deploy - "The Shipper"
+
+Use when: You are ready to put the app on the internet (e.g., Vercel, Netlify, or a server).
+
+/orchestrate - "The Manager"
+
+Use when: You have a massive task that needs multiple agents (e.g., "Plan backend, then Design frontend, then Write tests"). Note: This is often overkill for small projects.

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Add Faculty</h3>
+<form method="post">
+    Code <input name="code" required>
+    Name <input name="name" required>
+    Max Hours <input name="hours" required>
+    <button>Add</button>
+</form>
+
+<h3>Existing Faculty</h3>
+<table border="1">
+<tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Action</th>
+</tr>
+
+{% for code, f in faculty.items() %}
+<tr>
+    <td>{{ code }}</td>
+    <td>{{ f.name }}</td>
+    <td>
+    <!-- EDIT BUTTON -->
+    <a href="/faculty/edit/{{ code }}">
+        <button>Edit</button>
+    </a>
+        <form method="post" action="/faculty/delete/{{ code }}">
+            <button onclick="return confirm('Delete faculty {{ code }}?')">
+                Delete
+            </button>
+        </form>
+    </td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

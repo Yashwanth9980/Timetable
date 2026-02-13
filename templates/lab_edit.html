@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Edit Lab : {{ lab_id }}</h3>
+
+<form method="post">
+    <label>Lab Name:</label><br>
+    <input type="text" name="name" value="{{ lab.name }}" required><br><br>
+
+    <label>Room Number:</label><br>
+    <input type="text" name="room" value="{{ lab.room }}" required><br><br>
+
+    <button type="submit">Update Lab</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{
+    "MCMAT101": {
+        "name": "Mathematical Foundation",
+        "faculty": "SR",
+        "hours": 4,
+        "type": "theory"
+    },
+    "MBPSCL102": {
+        "name": "C Lab",
+        "faculty": "AS",
+        "hours": 2,
+        "type": "lab"
+    },
+    "MBOSCL103": {
+        "name": "Operating System Concepts with Unix",
+        "faculty": "MR",
+        "hours": 3,
+        "type": "theory"
+    },
+    "MBDDM104": {
+        "name": "Database Management Systems",
+        "faculty": "AC",
+        "hours": 3,
+        "type": "theory"
+    },
+    "MBOOJL105": {
+        "name": "Object Oriented Programming Using Java",
+        "faculty": "YR",
+        "hours": 3,
+        "type": "theory"
+    },
+    "MBWEBL106": {
+        "name": "Web Applications Lab",
+        "faculty": "AS",
+        "hours": 6,
+        "type": "lab"
+    },
+    "MBDBL107": {
+        "name": "DBMS Laboratory",
+        "faculty": "AC",
+        "hours": 6,
+        "type": "lab"
+    },
+    "MBJPL108": {
+        "name": "Java Programming Laboratory",
+        "faculty": "JS",
+        "hours": 6,
+        "type": "lab"
+    },
+    "MBCOML110": {
+        "name": "Career Competence Development Program",
+        "faculty": "PM",
+        "hours": 3,
+        "type": "theory"
+    }
+}

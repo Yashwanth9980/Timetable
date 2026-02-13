@@ -1,0 +1,34 @@
+{
+    "YR": {
+        "name": "Yashwanth Reddy V",
+        "max_hours": 5
+    },
+    "SR": {
+        "name": "Dr. Sravan Kumar T",
+        "max_hours": 5
+    },
+    "MR": {
+        "name": "Dr. Mariyan Richard",
+        "max_hours": 5
+    },
+    "AM": {
+        "name": "Mrs. Apoorva M",
+        "max_hours": 5
+    },
+    "AC": {
+        "name": "Ms. Ammrisha Chowdhury",
+        "max_hours": 5
+    },
+    "PM": {
+        "name": "Mrs. Priyanka M",
+        "max_hours": 5
+    },
+    "AS": {
+        "name": "Ms. Amali Sunitha",
+        "max_hours": 5
+    },
+    "JS": {
+        "name": "Ms. Jasmine J. C. Shiji",
+        "max_hours": 5
+    }
+}

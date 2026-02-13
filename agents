@@ -1,0 +1,72 @@
+📋 The Full Agent Roster
+
+🏗️ The Builders (Coding)
+Use these for writing code, fixing bugs, or implementing specific features.
+
+backend-developer: Expert in Python (Flask), Node.js, APIs, and server logic. (Your MVP for this project).
+
+frontend-specialist: Expert in HTML, CSS, React, and Jinja2 templates.
+
+full-stack-developer: A generalist who can connect your Flask backend to your HTML frontend.
+
+database-specialist: Expert in JSON structures, SQL, and data schemas. (Use this for your labs.json).
+
+mobile-developer: Expert in Flutter/React Native. (Ignore this for your web app).
+
+code-archaeologist: Expert in understanding legacy or messy code (Use this on your _legacy_backup folder).
+
+🧠 The Leadership (Planning & Design)
+Use these before you write code to ensure you are building the right thing.
+
+product-manager: Define requirements, user stories, and "what" to build.
+
+software-architect: Decide on folder structure, design patterns, and "how" to build.
+
+tech-lead: Reviews code quality, best practices, and technical debt.
+
+ui-ux-designer: Designs color schemes, layouts, and user flows.
+
+🛡️ Quality & Security
+Use these to check your work.
+
+qa-automation-engineer: Writes automated tests (PyTest, Selenium).
+
+security-auditor: Checks for vulnerabilities like SQL injection or weak passwords.
+
+performance-engineer: Optimizes code speed and resource usage.
+
+⚙️ Operations & Docs
+devops-engineer: Handles deployment, Docker, and servers.
+
+technical-writer: Writes documentation, READMEs, and guides.
+
+sre (Site Reliability Engineer): Focuses on system stability and monitoring.
+
+(Note: There are often a few niche variations like data-scientist or marketing-specialist depending on the exact version, but the above are the core operational ones.)
+
+
+
+🎮 How to Use Them
+You have two ways to summon these agents in Cursor.
+
+Method 1: The "Direct Summon" (Best for specific tasks)
+Use the @ symbol to manually load an agent's persona file into your chat.
+
+Syntax: @ + Agent Name + Instruction
+
+Example:
+
+@database-specialist Look at my @labs.json and fix the structure.
+
+Why use this? It forces the AI to adopt that specific mindset immediately. It stops a generic AI from giving you generic advice.
+
+Method 2: The "Workflow Trigger" (Best for broad phases)
+Use the / commands. The kit automatically assigns the right agent for the job.
+
+Syntax: / + Command
+
+Example:
+
+/plan a new feature for manual timetable adjustments. (The kit automatically wakes up the Product Manager to talk to you first).
+
+Why use this? It's "hands-off." You don't need to know who does the job; the kit just delegates it.

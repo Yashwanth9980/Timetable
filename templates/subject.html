@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Add Subject</h3>
+<form method="post">
+    Code <input name="code" required><br>
+    Name <input name="name" required><br>
+
+    Faculty
+    <select name="faculty">
+        {% for f in faculty %}
+            <option>{{ f }}</option>
+        {% endfor %}
+    </select><br>
+
+    Hours <input name="hours" required><br>
+
+    Type
+    <select name="type">
+        <option>theory</option>
+        <option>lab</option>
+    </select><br>
+
+    <button>Add</button>
+</form>
+
+<h3>Subjects</h3>
+<table border="1">
+<tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Faculty</th>
+    <th>Action</th>
+</tr>
+
+{% for code, s in subjects.items() %}
+<tr>
+    <td>{{ code }}</td>
+    <td>{{ s.name }}</td>
+    <td>{{ s.faculty }}</td>
+    <td>
+        <a href="/subject/edit/{{ code }}">
+        <button>Edit</button>
+    </a>
+        <form method="post" action="/subject/delete/{{ code }}">
+            <button onclick="return confirm('Delete subject {{ code }}?')">
+                Delete
+            </button>
+        </form>
+    </td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

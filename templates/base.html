@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Timetable System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>Dynamic Timetable Generation System</h2>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/faculty">Faculty</a>
+    <a href="/subject">Subjects</a>
+    <a href="/lab">Labs</a>
+    <a href="/generate">Generate Timetable</a>
+</nav>
+
+<hr>
+
+<!-- FLASH MESSAGES -->
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul>
+      {% for category, message in messages %}
+        <li style="color: {% if category == 'error' %}red{% else %}green{% endif %};">
+          {{ message }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

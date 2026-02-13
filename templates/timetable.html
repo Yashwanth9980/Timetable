@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<table border="1">
+<tr>
+<th>Day</th>
+{% for s in time_slots %}<th>{{ s }}</th>{% endfor %}
+</tr>
+{% for d,slots in timetable.items() %}
+<tr>
+<th>{{ d }}</th>
+{% for s in time_slots %}
+<td>{{ slots[s] or "-" }}</td>
+{% endfor %}
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

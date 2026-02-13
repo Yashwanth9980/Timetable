@@ -1,0 +1,13 @@
+# Antigravity Kit Configuration
+
+You have access to a set of AI agents and workflows in the `.agent` directory.
+Always check `.agent/rules` for project-specific guidelines.
+
+## Command Triggers
+When the user types a slash command, map it to the corresponding file in `.agent/workflows`:
+- `/brainstorm` -> Read `.agent/workflows/brainstorm.md` and follow the steps.
+- `/plan` -> Read `.agent/workflows/plan.md` and act as the Product Manager.
+- `/status` -> Read `.agent/workflows/status.md` and provide the structured report.
+- `/debug` -> Read `.agent/workflows/debug.md` and follow the systematic debugging process.
+
+If a command is not found, search the `.agent` folder for relevant skills.

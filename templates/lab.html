@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Add Lab</h3>
+<form method="post">
+    Lab ID <input name="lab_id" required>
+    Name <input name="name" required>
+    Room <input name="room" required>
+    <button>Add</button>
+</form>
+
+<h3>Labs</h3>
+<table border="1">
+<tr>
+    <th>Lab ID</th>
+    <th>Name</th>
+    <th>Room</th>
+    <th>Action</th>
+</tr>
+
+{% for id, lab in labs.items() %}
+<tr>
+    <td>{{ id }}</td>
+    <td>{{ lab.name }}</td>
+    <td>{{ lab.room }}</td>
+    <td>
+        <!-- EDIT BUTTON -->
+    <a href="/lab/edit/{{ id }}">
+        <button>Edit</button>
+    </a>
+        <form method="post" action="/lab/delete/{{ id }}">
+            <button onclick="return confirm('Delete lab {{ id }}?')">
+                Delete
+            </button>
+        </form>
+    </td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

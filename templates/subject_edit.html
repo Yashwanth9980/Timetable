@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Edit Subject : {{ code }}</h3>
+
+<form method="post">
+    <label>Name:</label><br>
+    <input type="text" name="name" value="{{ subject.name }}" required><br><br>
+
+    <label>Faculty:</label><br>
+    <select name="faculty">
+        {% for f in faculty %}
+            <option value="{{ f }}" {% if f == subject.faculty %}selected{% endif %}>
+                {{ f }}
+            </option>
+        {% endfor %}
+    </select><br><br>
+
+    <label>Hours per Week:</label><br>
+    <input type="number" name="hours" value="{{ subject.hours }}" required><br><br>
+
+    <label>Type:</label><br>
+    <select name="type">
+        <option value="theory" {% if subject.type == "theory" %}selected{% endif %}>
+            Theory
+        </option>
+        <option value="lab" {% if subject.type == "lab" %}selected{% endif %}>
+            Lab
+        </option>
+    </select><br><br>
+
+    <button type="submit">Update Subject</button>
+</form>
+
+{% endblock %}
